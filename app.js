@@ -98,7 +98,7 @@ app.get('/admin/update/:id', function (req, res) {
 
     if (id) {
         Movie.findById(id, function (err, movie) {
-            res.render('admin', {
+            res.render('update', {
                 title: 'movie information update',
                 movie: movie
             });

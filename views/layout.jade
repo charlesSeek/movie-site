@@ -5,5 +5,14 @@ html
 		title #{title}
 		include ./includes/head
 	body
+		.container
+			.row
+				ul.nav.nav-tabs
+					li
+						a(href='/',style='color:black') Movie First Page
+					li
+						a(href='/admin/list',style='color:black') Movie List Page
+					li
+						a(href='/admin/movie',style='color:black') Movie Admin Page
 		include ./includes/header
 		block content

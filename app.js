@@ -56,7 +56,7 @@ app.get('/', function (req, res) {
         }
 
         res.render('index', {
-            title: 'imooc 首页',
+            title: 'movie-site first page',
             movies: movies
         });
     });
@@ -70,7 +70,7 @@ app.get('/list', function (req, res) {
         }
 
         res.render('index', {
-            title: 'movie list page',
+            title: 'movie-site list page',
             movies: movies
         });
     });
@@ -85,7 +85,7 @@ app.get('/movie/:id', function (req, res) {
             console.log(err);
         }
         res.render('detail', {
-            title: 'imooc ' + movie.title,
+            title: 'movie-site ' + movie.title,
             movie: movie
         });
         return false;
@@ -106,10 +106,10 @@ app.get('/admin/update/:id', function (req, res) {
     }
 });
 
-// 录入
+// input page
 app.get('/admin/movie', function (req, res) {
     res.render('admin', {
-        title: 'imoooc 后台录入页',
+        title: 'movie-site Input Page',
         movie: {
             title: '',
             director: '',
@@ -123,7 +123,7 @@ app.get('/admin/movie', function (req, res) {
     });
 });
 
-// 管理列表
+// admin list page
 app.get('/admin/list', function (req, res) {
     Movie.fetch(function (err, movies) {
         if (err) {
@@ -131,7 +131,7 @@ app.get('/admin/list', function (req, res) {
         }
 
         res.render('list', {
-            title: 'imooc 列表页',
+            title: 'movie-site list page',
             movies: movies
         });
     });

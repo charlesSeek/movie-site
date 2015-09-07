@@ -1,0 +1,23 @@
+{
+  "name": "movie-site",
+  "version": "0.0.1",
+  "authors": [
+    "shucheng cui <cuishucheng@gmail.com>"
+  ],
+  "description": "movie web application demo",
+  "keywords": [
+    "movie-site"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
